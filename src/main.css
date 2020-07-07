@@ -3,3 +3,65 @@
     padding: 0;
 }
 
+body {
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#main-container {
+    width: 90%;
+    background: #FFF;
+    border: 2px solid rgba(209, 65, 57, 0.9);
+    border-radius: 30px;
+    margin: 5vh auto;
+    padding: 2%;
+}
+
+input, select, button {
+    display: block;
+    margin: 2% auto;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 100px;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#calculate_price_btn {
+    background-color: rgba(209, 65, 57, 1);
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    margin: 2% 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+    background: rgba(209, 65, 57, 1);
+    color: #FFF;
+    border-radius: 20px;
+    padding: 5px 10px ;
+}
+
+@media (min-width: 500px) {
+    #main-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 800px) {
+    #main-container {
+        width: 60%;
+        max-width: 800px;
+    }
+}

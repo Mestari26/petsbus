@@ -7,7 +7,46 @@
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    
+    <main id="main-container">
+        <form id="price_check_form">
+            <select name="country_from" id="country_from_input">
+                <option value="england">ANGLIA</option>
+                <option value="belgium">BELGIA</option>
+                <option value="france">FRANCJA</option>
+                <option value="holland">HOLANDIA</option>
+                <option value="ireland">IRLANDIA</option>
+                <option value="ireland_north">IRLANDIA PÓŁNOCNA</option>
+                <option value="germany_east">NIEMCY WSCHODNIE</option>
+                <option value="germany_west">NIEMCY ZACHODNIE</option>
+                <option value="poland_east">POLSKA WSCHODNIA</option>
+                <option value="poland_west">POLSKA ZACHODNIA</option>
+                <option value="scotland">SZKOCJA</option>
+                <option value="wales">WALIA</option>
+            </select>
+            <select name="country_to" id="country_to_input">
+                <option value="england">ANGLIA</option>
+                <option value="belgium">BELGIA</option>
+                <option value="france">FRANCJA</option>
+                <option value="holland">HOLANDIA</option>
+                <option value="ireland">IRLANDIA</option>
+                <option value="ireland_north">IRLANDIA PÓŁNOCNA</option>
+                <option value="germany_east">NIEMCY WSCHODNIE</option>
+                <option value="germany_west">NIEMCY ZACHODNIE</option>
+                <option value="poland_east">POLSKA WSCHODNIA</option>
+                <option value="poland_west">POLSKA ZACHODNIA</option>
+                <option value="scotland">SZKOCJA</option>
+                <option value="wales">WALIA</option>
+            </select>
+            <input type="text" name="kilometers" id="kilometers_input" placeholder="Podaj trasę w kilometrach"/>
+            <form id="currency_form">
+                <input type="radio" name="currency" id="eur_currency_form" value="euro"><label for="eur_currency_form">EUR</label>
+                <input type="radio" name="currency" id="gbp_currency_form" value="pound"><label for="gbp_currency_form">GBP</label>
+                <input type="radio" name="currency" id="pln_currency_form" value="zloty"><label for="pln_currency_form">PLN</label>
+            </form>
+        </form>
+        <button id="calculate_price_btn">Oblicz</button>
+        <p id="km_output"></p>
+    </main>
 
     <script src="main.js"></script>
 </body>
